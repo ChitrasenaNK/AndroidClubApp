@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity4">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:padding="1dp"
+        >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@drawable/bg"
+                android:id="@+id/rl"
+                >
+                <ImageView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/logo"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/logo"
+
+                    />
+                <ImageButton
+                    android:layout_marginTop="8dp"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/ic_baseline_power_settings_new_24"
+                     android:background="#061FAB"
+                   android:layout_marginEnd="14dp"
+                    android:layout_alignParentEnd="true"
+                    android:id="@+id/logOut"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Logout"
+                    android:textColor="@color/white"
+                    android:layout_below="@+id/logOut"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="10dp"/>
+                <TextView
+                    android:layout_below="@+id/logo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Android Application Development"
+                    android:textSize="15sp"
+                    android:layout_marginTop="15dp"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="monospace"
+                    android:textColor="@color/white"
+                    android:id="@+id/ad"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="and"
+                    android:textSize="15sp"
+                    android:layout_marginTop="2dp"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="monospace"
+                    android:textColor="@color/white"
+                    android:layout_below="@+id/ad"
+                    android:id="@+id/andd"
+
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Programming Club"
+                    android:textSize="15sp"
+                    android:layout_marginTop="2dp"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="monospace"
+                    android:textColor="@color/white"
+                    android:layout_below="@+id/andd"
+
+
+                    />
+            </RelativeLayout>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/rl"
+            android:id="@+id/sv"
+            android:fillViewport="true"
+            android:padding="2dp"
+            android:layout_above="@+id/linlt">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Club Description:"
+                    android:textSize="16sp"
+                    android:textColor="#010629"
+                    android:textStyle="bold"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+
+                    />
+                <TextView
+                    android:id="@+id/description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="30dp"
+                    android:paddingTop="20dp"
+                    android:layout_margin="10dp"
+                    android:text="The Android App Development and Programming Club provides members with opportunities to learn, practice, and collaborate on app development and Programming. The club focuses on the development of user-facing applications for Android and the web, and is open to working with any other platforms that facilitate this kind of application. We work to create a community of programmers that are interested in helping each other learn and grow in their development abilities, and we welcome anyone regardless of skill level."
+                    android:textSize="18sp"
+                    android:textColor="#3E3F3F"
+                    />
+
+
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:padding="5dp"
+            android:gravity="center"
+            android:background="#FDFDFE"
+            android:id="@+id/linlt"
+
+            >
+
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:id="@+id/btnhome"
+                app:backgroundTint="#FFFFFF"
+                android:src="@drawable/ic_baseline_home_24"
+                android:layout_marginEnd="50dp"
+
+                />
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="50dp"
+                android:id="@+id/btnImg"
+                app:backgroundTint="#FFFFFF"
+                android:src="@drawable/ic_baseline_event_24"
+
+                />
+
+        </LinearLayout>
+
+
+
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

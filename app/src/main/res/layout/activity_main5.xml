@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity5">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/bgpink">
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+           android:id="@+id/back"
+            android:src="@drawable/ic_baseline_arrow_back_24"
+            android:background="#2C3049"/>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+           android:layout_toEndOf="@+id/back"
+            android:textColor="#EC2B72"
+            android:textSize="25sp"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"
+            android:fontFamily="monospace"
+            android:id="@+id/title1"
+            android:singleLine="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:ellipsize="marquee"
+            android:scrollHorizontally="true"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/lin"
+            android:layout_below="@+id/title1"
+            android:layout_marginStart="20dp"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+
+                android:text="Venue"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+
+
+                android:fontFamily="monospace"
+                android:id="@+id/venue1"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+
+                android:text="Date"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+
+
+                android:fontFamily="monospace"
+                android:id="@+id/date1"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:padding="5dp"
+                android:layout_marginEnd="20dp"
+                 android:id="@+id/txtDes1"
+                android:text="Description"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+
+                android:textStyle="italic"
+                android:fontFamily="monospace"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@+id/lin"
+            android:layout_margin="20dp"
+            android:layout_marginBottom="5dp">
+
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"
+                android:text="Register"
+                android:layout_gravity="center"
+                android:backgroundTint="#EC2B72"
+                android:id="@+id/btnRegister"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:textAllCaps="true"
+
+                android:textSize="15sp"
+                android:layout_gravity="center"
+                android:id="@+id/status"
+                android:layout_marginTop="20dp"
+                />
+
+
+        </LinearLayout>
+
+
+
+
+
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

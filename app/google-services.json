@@ -1,0 +1,98 @@
+{
+  "project_info": {
+    "project_number": "664754701486",
+    "firebase_url": "https://ehoryzon-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "ehoryzon",
+    "storage_bucket": "ehoryzon.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:664754701486:android:fe69aabee7783b3e1a993f",
+        "android_client_info": {
+          "package_name": "com.example.androidclub"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "664754701486-u3kaj05hp11u3jmr0bp51ieap6n3rk1f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBeFa3WWPYfA_IHv0Cw3eUdqIh88TN_10w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "664754701486-u3kaj05hp11u3jmr0bp51ieap6n3rk1f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:664754701486:android:5792ec05862bfdb41a993f",
+        "android_client_info": {
+          "package_name": "com.example.sample"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "664754701486-u3kaj05hp11u3jmr0bp51ieap6n3rk1f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBeFa3WWPYfA_IHv0Cw3eUdqIh88TN_10w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "664754701486-u3kaj05hp11u3jmr0bp51ieap6n3rk1f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:664754701486:android:33ab7988b4a7dc051a993f",
+        "android_client_info": {
+          "package_name": "com.example.screen"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "664754701486-u3kaj05hp11u3jmr0bp51ieap6n3rk1f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBeFa3WWPYfA_IHv0Cw3eUdqIh88TN_10w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "664754701486-u3kaj05hp11u3jmr0bp51ieap6n3rk1f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
