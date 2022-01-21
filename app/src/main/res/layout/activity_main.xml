@@ -95,8 +95,8 @@
 
             android:layout_marginTop="25dp"
 
-
-            android:backgroundTint="#031371"
+            android:background="@drawable/btnadd"
+            app:backgroundTint="#031371"
 
             android:text="Login"
             android:textColor="@color/white"
@@ -110,20 +110,64 @@
             android:text="Or"
             android:textSize="16sp"
             />
-        <Button
-            android:layout_width="150dp"
-            android:layout_height="wrap_content"
-            android:text="SignUp?"
-            android:textAlignment="center"
-            android:padding="2dp"
-            android:textSize="16sp"
-            android:textColor="#031371"
 
-            android:layout_gravity="center_horizontal"
-            app:backgroundTint="@color/white"
-            android:id="@+id/signup"
-            android:textStyle="italic"
-            />
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="SignUp?"
+                android:textAlignment="center"
+                android:padding="2dp"
+                android:textSize="16sp"
+                android:textColor="#031371"
+                android:background="@drawable/btnadd"
+
+                android:layout_gravity="center_horizontal"
+                app:backgroundTint="@color/white"
+                android:id="@+id/signup"
+                android:textStyle="italic"
+                android:layout_marginEnd="5dp"
+                />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edit_text">
+            <EditText
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+              android:layout_gravity="center_vertical"
+                android:background="@drawable/edit_text"
+                android:layout_marginStart="8dp"
+                android:hint="Code"
+                android:inputType="textPassword"
+                android:padding="5dp"
+                android:id="@+id/code"
+                android:drawableLeft="@drawable/ic_baseline_https_24"
+                android:drawablePadding="5dp"
+
+
+
+                />
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:text="Admin"
+
+                android:padding="2dp"
+                android:textSize="16sp"
+                android:textColor="#031371"
+                android:layout_marginStart="5dp"
+                android:layout_gravity="center_vertical"
+                app:backgroundTint="@color/white"
+                android:id="@+id/admin"
+                android:textStyle="italic"
+                />
+
+        </LinearLayout>
+
+
+
 
 
     </LinearLayout>

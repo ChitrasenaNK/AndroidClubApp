@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity7"
+    android:background="@drawable/bgpink">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/bg">
+
+            <ImageButton
+                android:id="@+id/back7"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:background="#020C4D"
+                android:src="@drawable/ic_baseline_arrow_back_24" />
+
+
+            <ImageView
+                android:id="@+id/center"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_centerVertical="true"
+
+                android:layout_marginStart="25dp"
+                android:layout_toEndOf="@+id/back7"
+                android:src="@drawable/logo"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@+id/center"
+                android:fontFamily="serif-monospace"
+                android:text="Android Club"
+                android:textColor="@color/white"
+
+                android:textFontWeight="15"
+                android:textSize="25sp" />
+
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/eventadd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/edit_text"
+            android:textColorHint="@color/white"
+            android:hint="Event Name"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/white"
+            android:padding="10dp"
+            android:textCursorDrawable="@drawable/cursor"
+
+
+
+            />
+
+        <EditText
+            android:id="@+id/venueadd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edit_text"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+
+            android:hint="Venue"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+
+            android:textCursorDrawable="@drawable/cursor"
+            />
+
+        <EditText
+            android:id="@+id/dateadd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edit_text"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:textCursorDrawable="@drawable/cursor"
+            android:hint="Date"
+
+            android:padding="10dp"
+
+
+            />
+
+        <EditText
+            android:textCursorDrawable="@drawable/cursor"
+            android:id="@+id/desadd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edit_text"
+            android:gravity="top"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+
+            android:hint="Description"
+            android:inputType="textMultiLine"
+            android:lines="5"
+            android:padding="8dp"
+
+
+            />
+
+
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="40dp"
+            android:layout_gravity="center_horizontal"
+
+            android:text="Add"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:background="@drawable/btnadd"
+
+            app:backgroundTint="#EC2B72" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

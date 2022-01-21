@@ -165,11 +165,5 @@ public class MainActivity5 extends AppCompatActivity {
 
             }
         });
-
-
-
-
-
-
     }
 }

@@ -1,14 +1,23 @@
 package com.example.androidclub;
 
 public class information {
-    private String name,des,venue,date;
+    private String id, name,des,venue,date;
     public information()
     {
 
     }
 
 
-    public information(String name, String des, String venue, String date) {
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public information(String id, String name, String des, String venue, String date) {
+        this.id=id;
         this.name=name;
         this.des = des;
         this.venue=venue;

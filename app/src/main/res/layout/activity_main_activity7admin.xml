@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity7admin"
+    android:background="@drawable/bgpink"
+    >
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/bg"
+            android:layout_alignParentTop="true"
+            android:id="@+id/rel">
+
+
+            <ImageView
+                android:id="@+id/center"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_centerVertical="true"
+
+                android:layout_marginStart="25dp"
+
+                android:src="@drawable/logo"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@+id/center"
+                android:fontFamily="serif-monospace"
+                android:text="Android Club"
+                android:textColor="@color/white"
+                android:textFontWeight="15"
+                android:textSize="25sp" />
+
+            <ImageButton
+                android:id="@+id/logOutAdmin"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="14dp"
+                android:background="#061FAB"
+                android:src="@drawable/ic_baseline_power_settings_new_24" />
+
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+           android:layout_below="@+id/rel"
+            android:dividerHeight="10dp"
+            android:padding="10dp"
+
+android:layout_above="@+id/addEvent"
+
+            />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btnadd"
+        app:backgroundTint="#EC2B72"
+        android:id="@+id/addEvent"
+        android:text="Add event"
+        android:layout_alignParentBottom="true"
+    android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"
+        />
+
+
+
+
+</RelativeLayout>

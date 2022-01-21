@@ -106,7 +106,8 @@
                 android:textColor="@color/white"
                 android:text="Register"
                 android:layout_gravity="center"
-                android:backgroundTint="#EC2B72"
+                android:background="@drawable/btnadd"
+                app:backgroundTint="#EC2B72"
                 android:id="@+id/btnRegister"/>
             <TextView
                 android:layout_width="wrap_content"

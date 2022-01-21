@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginEnd="8dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginStart="8dp"
+    app:cardCornerRadius="45dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:background="@drawable/button"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:id="@+id/txtEventA"
+
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="10dp"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:fontFamily="monospace"
+
+
+            android:textSize="15sp"
+            android:singleLine="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:ellipsize="marquee"
+            android:scrollHorizontally="true"
+            >
+
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="10dp"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:fontFamily="monospace"
+            android:layout_below="@+id/txtEventA"
+            android:textSize="15sp"
+            android:singleLine="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:ellipsize="marquee"
+            android:scrollHorizontally="true"
+            android:id="@+id/txtVenueA"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="10dp"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:fontFamily="monospace"
+            android:layout_below="@+id/txtVenueA"
+            android:textSize="15sp"
+            android:singleLine="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:ellipsize="marquee"
+            android:scrollHorizontally="true"
+            android:id="@+id/txtDateA"/>
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
