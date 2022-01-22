@@ -8,11 +8,15 @@ import android.annotation.SuppressLint;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.InputType;
+import android.text.TextUtils;
+import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -38,9 +42,9 @@ public class MainActivity7admin extends AppCompatActivity {
     ArrayList<String> listDes = new ArrayList<>();
     ArrayList<String> listVenue = new ArrayList<>();
     ArrayList<String> listDate= new ArrayList<>();
-    Button addEvent;
+    Button addEvent,changeInfo;
     ImageButton log;
-
+    DatabaseReference df;
     FirebaseAuth mAuth;
 
     @Override
@@ -50,6 +54,7 @@ public class MainActivity7admin extends AppCompatActivity {
         listView = findViewById(R.id.listView);
         display();
         addEvent=findViewById(R.id.addEvent);
+        changeInfo=findViewById(R.id.addInfo);
         log=findViewById(R.id.logOutAdmin);
         mAuth=FirebaseAuth.getInstance();
         log.setOnClickListener(new View.OnClickListener() {
@@ -58,6 +63,59 @@ public class MainActivity7admin extends AppCompatActivity {
                 mAuth.signOut();
                 Toast.makeText(MainActivity7admin.this, "Logged Out Successfully", Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(MainActivity7admin.this,MainActivity.class));
+            }
+        });
+        changeInfo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                AlertDialog.Builder alert =new AlertDialog.Builder(MainActivity7admin.this);
+                alert.setTitle("Club Info:");
+                EditText txt=new EditText(MainActivity7admin.this);
+                txt.setInputType(InputType.TYPE_TEXT_FLAG_MULTI_LINE);
+                txt.setGravity(Gravity.TOP);
+                txt.setBackgroundResource(android.R.drawable.edit_text);
+                txt.setSingleLine(false);
+                txt.setPadding(6,5,6,5);
+
+                txt.setHint("Type new Info about club");
+                txt.setLines(5);
+                alert.setView(txt);
+                alert.setPositiveButton("Change", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        String x=txt.getText().toString();
+                        if(TextUtils.isEmpty(x))
+                        {
+                            txt.setError("Empty!!");
+                            txt.requestFocus();
+                            return;
+                        }
+                        df=FirebaseDatabase.getInstance().getReference("ClubInfo");
+                        df.child("info").setValue(x).addOnSuccessListener(new OnSuccessListener<Void>() {
+                            @Override
+                            public void onSuccess(Void unused) {
+                                Toast.makeText(MainActivity7admin.this, "Update Success!!", Toast.LENGTH_SHORT).show();
+                            }
+                        }).addOnFailureListener(new OnFailureListener() {
+                            @Override
+                            public void onFailure(@NonNull @NotNull Exception e) {
+                                Toast.makeText(MainActivity7admin.this, "Update Failed!!", Toast.LENGTH_SHORT).show();
+                            }
+                        });
+
+
+
+
+                    }
+                });
+                alert.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.cancel();
+                    }
+                });
+                alert.show();
+
             }
         });
         addEvent.setOnClickListener(new View.OnClickListener() {
